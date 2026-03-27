@@ -1,0 +1,35 @@
+{
+  "duration": {
+    "$type": "duration",
+    "instant": {
+      "$value": "0ms"
+    },
+    "fast": {
+      "$value": "100ms"
+    },
+    "normal": {
+      "$value": "200ms"
+    },
+    "slow": {
+      "$value": "300ms"
+    },
+    "slower": {
+      "$value": "500ms"
+    }
+  },
+  "easing": {
+    "$type": "cubicBezier",
+    "default": {
+      "$value": [0.4, 0, 0.2, 1]
+    },
+    "in": {
+      "$value": [0.4, 0, 1, 1]
+    },
+    "out": {
+      "$value": [0, 0, 0.2, 1]
+    },
+    "inOut": {
+      "$value": [0.4, 0, 0.2, 1]
+    }
+  }
+}

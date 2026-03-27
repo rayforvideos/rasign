@@ -1,0 +1,17 @@
+{
+  "name": "@rasign/tokens",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build:tokens": "node sd.config.js",
+    "validate:tokens": "node scripts/validate-tokens.js"
+  },
+  "exports": {
+    "./*/css/*": "./build/*/css/*",
+    "./*/scss/*": "./build/*/scss/*",
+    "./*/js/*": "./build/*/js/*"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4"
+  }
+}

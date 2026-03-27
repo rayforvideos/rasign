@@ -1,0 +1,89 @@
+{
+  "fontSize": {
+    "$type": "dimension",
+    "xs": {
+      "$value": "12px"
+    },
+    "sm": {
+      "$value": "14px"
+    },
+    "base": {
+      "$value": "16px"
+    },
+    "lg": {
+      "$value": "18px"
+    },
+    "xl": {
+      "$value": "20px"
+    },
+    "2xl": {
+      "$value": "24px"
+    },
+    "3xl": {
+      "$value": "30px"
+    },
+    "4xl": {
+      "$value": "36px"
+    },
+    "5xl": {
+      "$value": "48px"
+    }
+  },
+  "fontWeight": {
+    "$type": "number",
+    "regular": {
+      "$value": 400
+    },
+    "medium": {
+      "$value": 500
+    },
+    "semibold": {
+      "$value": 600
+    },
+    "bold": {
+      "$value": 700
+    }
+  },
+  "lineHeight": {
+    "$type": "number",
+    "tight": {
+      "$value": 1.25
+    },
+    "snug": {
+      "$value": 1.375
+    },
+    "normal": {
+      "$value": 1.5
+    },
+    "relaxed": {
+      "$value": 1.625
+    },
+    "loose": {
+      "$value": 2
+    }
+  },
+  "fontFamily": {
+    "$type": "fontFamily",
+    "sans": {
+      "$value": ["Pretendard", "system-ui", "sans-serif"]
+    },
+    "mono": {
+      "$value": ["JetBrains Mono", "monospace"]
+    }
+  },
+  "letterSpacing": {
+    "$type": "dimension",
+    "tighter": {
+      "$value": "-0.05em"
+    },
+    "tight": {
+      "$value": "-0.025em"
+    },
+    "normal": {
+      "$value": "0em"
+    },
+    "wide": {
+      "$value": "0.025em"
+    }
+  }
+}

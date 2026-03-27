@@ -1,0 +1,17 @@
+{
+  "opacity": {
+    "$type": "number",
+    "disabled": {
+      "$value": 0.4
+    },
+    "overlay": {
+      "$value": 0.5
+    },
+    "subtle": {
+      "$value": 0.7
+    },
+    "full": {
+      "$value": 1
+    }
+  }
+}

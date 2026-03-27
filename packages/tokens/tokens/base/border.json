@@ -1,0 +1,35 @@
+{
+  "borderRadius": {
+    "$type": "dimension",
+    "none": {
+      "$value": "0"
+    },
+    "sm": {
+      "$value": "4px"
+    },
+    "md": {
+      "$value": "8px"
+    },
+    "lg": {
+      "$value": "12px"
+    },
+    "xl": {
+      "$value": "16px"
+    },
+    "full": {
+      "$value": "9999px"
+    }
+  },
+  "borderWidth": {
+    "$type": "dimension",
+    "thin": {
+      "$value": "1px"
+    },
+    "medium": {
+      "$value": "2px"
+    },
+    "thick": {
+      "$value": "4px"
+    }
+  }
+}
