@@ -7,11 +7,20 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@rasign/react": ["../react/src/index.ts"]
+      "@rasign/react": ["../react/src/index.ts"],
+      "@rasign/styles/*": ["../styles/*"]
     }
   },
-  "include": [".storybook/**/*.ts", "stories/**/*.tsx", "stories/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    ".storybook/**/*.ts",
+    "stories/**/*.tsx",
+    "stories/**/*.ts",
+    "../react/src/**/*.ts",
+    "../react/src/**/*.tsx",
+    "src/**/*.d.ts"
+  ],
+  "exclude": ["node_modules", "../react/src/**/*.test.*"]
 }

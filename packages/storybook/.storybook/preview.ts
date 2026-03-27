@@ -38,8 +38,7 @@ const preview: Preview = {
         { 'data-brand': brand, 'data-theme': theme },
         React.createElement(
           DesignSystemProvider,
-          { brand, defaultTheme: theme },
-          React.createElement(Story),
+          { brand, defaultTheme: theme, children: React.createElement(Story) },
         ),
       );
     },
