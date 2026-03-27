@@ -1,0 +1,56 @@
+{
+  "color": {
+    "$type": "color",
+    "bg": {
+      "$value": "{color.white}"
+    },
+    "bg-subtle": {
+      "$value": "{color.gray.50}"
+    },
+    "bg-muted": {
+      "$value": "{color.gray.100}"
+    },
+    "text": {
+      "$value": "{color.gray.900}"
+    },
+    "text-muted": {
+      "$value": "{color.gray.500}"
+    },
+    "text-subtle": {
+      "$value": "{color.gray.400}"
+    },
+    "border": {
+      "$value": "{color.gray.200}"
+    },
+    "border-strong": {
+      "$value": "{color.gray.300}"
+    },
+    "ring": {
+      "$value": "{color.gray.300}"
+    },
+    "accent": {
+      "$value": "{color.gray.900}"
+    },
+    "accent-hover": {
+      "$value": "{color.gray.800}"
+    },
+    "accent-text": {
+      "$value": "{color.white}"
+    },
+    "danger": {
+      "$value": "#ef4444"
+    },
+    "danger-hover": {
+      "$value": "#dc2626"
+    },
+    "danger-text": {
+      "$value": "{color.white}"
+    },
+    "success": {
+      "$value": "#22c55e"
+    },
+    "warning": {
+      "$value": "#f59e0b"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "space": {
+    "$type": "dimension",
+    "component-gap": {
+      "$value": "{spacing.2}"
+    },
+    "section-gap": {
+      "$value": "{spacing.8}"
+    },
+    "page-padding": {
+      "$value": "{spacing.6}"
+    },
+    "input-padding-x": {
+      "$value": "{spacing.3}"
+    },
+    "input-padding-y": {
+      "$value": "{spacing.2}"
+    },
+    "button-padding-x": {
+      "$value": "{spacing.4}"
+    },
+    "button-padding-y": {
+      "$value": "{spacing.2}"
+    },
+    "card-padding": {
+      "$value": "{spacing.4}"
+    }
+  }
+}
