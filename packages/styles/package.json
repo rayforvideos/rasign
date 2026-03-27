@@ -1,0 +1,12 @@
+{
+  "name": "@rasign/styles",
+  "version": "0.1.0",
+  "exports": {
+    "./components/*": "./src/components/*",
+    "./reset.css": "./src/reset.css"
+  },
+  "files": ["src"],
+  "peerDependencies": {
+    "@rasign/tokens": ">=0.1.0"
+  }
+}
