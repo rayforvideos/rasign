@@ -13,7 +13,8 @@ const filteredPlugins = angularPlugins.filter((p: any) => {
 });
 
 export default defineConfig({
-  plugins: filteredPlugins,
+  // Cast needed: @analogjs returns vite@5 Plugin types, vitest/config expects vite@6
+  plugins: filteredPlugins as any,
   test: {
     globals: true,
     setupFiles: ['src/test-setup.ts'],
