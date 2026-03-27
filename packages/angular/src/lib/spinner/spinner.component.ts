@@ -1,4 +1,4 @@
-import { Component, input, computed, Input } from '@angular/core';
+import { Component, input, computed } from '@angular/core';
 
 type Size = 'sm' | 'md' | 'lg' | 'xl';
 
@@ -9,7 +9,7 @@ type Size = 'sm' | 'md' | 'lg' | 'xl';
   styles: [],
 })
 export class DsSpinner {
-  @Input({ isSignal: true }) size = input<Size>('md');
-  @Input({ isSignal: true }) label = input<string>('Loading');
+  size = input<Size>('md');
+  label = input<string>('Loading');
   classes = computed(() => `spinner ${this.size()}`);
 }
