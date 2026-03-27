@@ -1,4 +1,8 @@
-export { provideDesignSystem, DesignSystemService, DESIGN_SYSTEM_CONFIG } from './lib/providers/design-system';
+export {
+  provideDesignSystem,
+  DesignSystemService,
+  DESIGN_SYSTEM_CONFIG,
+} from './lib/providers/design-system';
 export type { Theme, DesignSystemConfig } from './lib/providers/design-system';
 export { DsTypography } from './lib/typography/typography.component';
 export { DsRow } from './lib/row/row.component';

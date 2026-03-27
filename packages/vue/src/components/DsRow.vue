@@ -23,22 +23,27 @@ const justifyMap: Record<Justify, string> = {
   evenly: styles.justifyEvenly,
 };
 
-const props = withDefaults(defineProps<{
-  as?: string;
-  gap?: string;
-  align?: Align;
-  justify?: Justify;
-  wrap?: boolean;
-}>(), {
-  as: 'div',
-});
+const props = withDefaults(
+  defineProps<{
+    as?: string;
+    gap?: string;
+    align?: Align;
+    justify?: Justify;
+    wrap?: boolean;
+  }>(),
+  {
+    as: 'div',
+  },
+);
 
-const classes = computed(() => [
-  styles.row,
-  props.align && alignMap[props.align],
-  props.justify && justifyMap[props.justify],
-  props.wrap && styles.wrap,
-].filter(Boolean));
+const classes = computed(() =>
+  [
+    styles.row,
+    props.align && alignMap[props.align],
+    props.justify && justifyMap[props.justify],
+    props.wrap && styles.wrap,
+  ].filter(Boolean),
+);
 
 const gapStyle = computed<CSSProperties>(() =>
   props.gap ? { gap: `var(--ds-spacing-${props.gap})` } : {},

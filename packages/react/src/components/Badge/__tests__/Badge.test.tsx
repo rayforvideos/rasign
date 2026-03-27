@@ -8,7 +8,11 @@ describe('Badge', () => {
   });
 
   test('applies variant class', () => {
-    render(<Badge variant="success" data-testid="badge">OK</Badge>);
+    render(
+      <Badge variant="success" data-testid="badge">
+        OK
+      </Badge>,
+    );
     expect(screen.getByTestId('badge').className).toContain('success');
   });
 });

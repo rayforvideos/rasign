@@ -5,7 +5,9 @@
     "./components/*": "./src/components/*",
     "./reset.css": "./src/reset.css"
   },
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "peerDependencies": {
     "@rasign/tokens": ">=0.1.0"
   }

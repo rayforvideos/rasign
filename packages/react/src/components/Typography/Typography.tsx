@@ -17,10 +17,10 @@ const variantClassMap: Record<Variant, string> = {
   'heading-lg': styles.headingLg,
   'heading-md': styles.headingMd,
   'heading-sm': styles.headingSm,
-  'body': styles.body,
+  body: styles.body,
   'body-sm': styles.bodySm,
-  'caption': styles.caption,
-  'code': styles.code,
+  caption: styles.caption,
+  code: styles.code,
 };
 
 type TypographyOwnProps = {
@@ -36,9 +36,7 @@ export function Typography<E extends ElementType = 'p'>({
   ...rest
 }: PolymorphicProps<E, TypographyOwnProps>) {
   const Component = as ?? 'p';
-  const cls = [styles.typography, variantClassMap[variant], className]
-    .filter(Boolean)
-    .join(' ');
+  const cls = [styles.typography, variantClassMap[variant], className].filter(Boolean).join(' ');
 
   return (
     <Component className={cls} {...rest}>

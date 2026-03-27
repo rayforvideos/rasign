@@ -4,14 +4,17 @@ import styles from '@rasign/styles/components/avatar.module.scss';
 
 type Size = 'sm' | 'md' | 'lg' | 'xl';
 
-const props = withDefaults(defineProps<{
-  src?: string;
-  alt?: string;
-  initials?: string;
-  size?: Size;
-}>(), {
-  size: 'md',
-});
+const props = withDefaults(
+  defineProps<{
+    src?: string;
+    alt?: string;
+    initials?: string;
+    size?: Size;
+  }>(),
+  {
+    size: 'md',
+  },
+);
 </script>
 
 <template>

@@ -8,5 +8,7 @@ const meta: Meta<typeof Avatar> = {
 };
 export default meta;
 
-export const WithImage: StoryObj = { args: { src: 'https://i.pravatar.cc/100', alt: 'User', size: 'lg' } };
+export const WithImage: StoryObj = {
+  args: { src: 'https://i.pravatar.cc/100', alt: 'User', size: 'lg' },
+};
 export const WithInitials: StoryObj = { args: { initials: 'JD', size: 'lg' } };

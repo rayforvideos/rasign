@@ -8,8 +8,7 @@ export interface DesignSystemContext {
   setTheme: (theme: Theme) => void;
 }
 
-export const designSystemKey: InjectionKey<DesignSystemContext> =
-  Symbol('rasign-design-system');
+export const designSystemKey: InjectionKey<DesignSystemContext> = Symbol('rasign-design-system');
 
 export function useDesignSystem(): DesignSystemContext {
   const context = inject(designSystemKey);

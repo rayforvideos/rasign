@@ -5,7 +5,9 @@ type Size = 'sm' | 'md' | 'lg' | 'xl';
 @Component({
   selector: 'ds-icon',
   standalone: true,
-  template: `<span [class]="classes()" role="img" [attr.aria-label]="label()"><ng-content /></span>`,
+  template: `<span [class]="classes()" role="img" [attr.aria-label]="label()"
+    ><ng-content
+  /></span>`,
   styles: [],
 })
 export class DsIcon {

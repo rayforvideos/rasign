@@ -21,22 +21,27 @@ const roundedMap: Record<Rounded, string> = {
   full: styles.roundedFull,
 };
 
-const props = withDefaults(defineProps<{
-  as?: string;
-  elevation?: Elevation;
-  rounded?: Rounded;
-  bordered?: boolean;
-  padding?: string;
-}>(), {
-  as: 'div',
-});
+const props = withDefaults(
+  defineProps<{
+    as?: string;
+    elevation?: Elevation;
+    rounded?: Rounded;
+    bordered?: boolean;
+    padding?: string;
+  }>(),
+  {
+    as: 'div',
+  },
+);
 
-const classes = computed(() => [
-  styles.surface,
-  props.elevation && elevationMap[props.elevation],
-  props.rounded && roundedMap[props.rounded],
-  props.bordered && styles.bordered,
-].filter(Boolean));
+const classes = computed(() =>
+  [
+    styles.surface,
+    props.elevation && elevationMap[props.elevation],
+    props.rounded && roundedMap[props.rounded],
+    props.bordered && styles.bordered,
+  ].filter(Boolean),
+);
 
 const paddingStyle = computed<CSSProperties>(() =>
   props.padding ? { padding: `var(--ds-spacing-${props.padding})` } : {},

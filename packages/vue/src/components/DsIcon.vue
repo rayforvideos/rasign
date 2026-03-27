@@ -4,12 +4,15 @@ import styles from '@rasign/styles/components/icon.module.scss';
 
 type Size = 'sm' | 'md' | 'lg' | 'xl';
 
-const props = withDefaults(defineProps<{
-  size?: Size;
-  label: string;
-}>(), {
-  size: 'md',
-});
+const props = withDefaults(
+  defineProps<{
+    size?: Size;
+    label: string;
+  }>(),
+  {
+    size: 'md',
+  },
+);
 </script>
 
 <template>

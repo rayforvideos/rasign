@@ -10,10 +10,26 @@
   font-weight: var(--ds-font-weight-medium);
 }
 
-.sm { width: 32px; height: 32px; font-size: var(--ds-font-size-xs); }
-.md { width: 40px; height: 40px; font-size: var(--ds-font-size-sm); }
-.lg { width: 48px; height: 48px; font-size: var(--ds-font-size-base); }
-.xl { width: 64px; height: 64px; font-size: var(--ds-font-size-lg); }
+.sm {
+  width: 32px;
+  height: 32px;
+  font-size: var(--ds-font-size-xs);
+}
+.md {
+  width: 40px;
+  height: 40px;
+  font-size: var(--ds-font-size-sm);
+}
+.lg {
+  width: 48px;
+  height: 48px;
+  font-size: var(--ds-font-size-base);
+}
+.xl {
+  width: 64px;
+  height: 64px;
+  font-size: var(--ds-font-size-lg);
+}
 
 .image {
   width: 100%;

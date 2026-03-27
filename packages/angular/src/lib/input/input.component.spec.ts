@@ -8,7 +8,9 @@ import { DsInput } from './input.component';
   imports: [DsInput, ReactiveFormsModule],
   template: `<ds-input [formControl]="ctrl" />`,
 })
-class TestHost { ctrl = new FormControl('initial'); }
+class TestHost {
+  ctrl = new FormControl('initial');
+}
 
 describe('DsInput', () => {
   it('renders with initial value from FormControl', () => {

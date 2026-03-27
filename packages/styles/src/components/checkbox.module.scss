@@ -4,7 +4,10 @@
   gap: var(--ds-spacing-2);
   cursor: pointer;
 
-  &.disabled { opacity: var(--ds-opacity-disabled); cursor: not-allowed; }
+  &.disabled {
+    opacity: var(--ds-opacity-disabled);
+    cursor: not-allowed;
+  }
 }
 
 .checkbox {

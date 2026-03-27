@@ -15,7 +15,10 @@ describe('DsButton', () => {
   });
 
   test('applies secondary variant', () => {
-    const wrapper = mount(DsButton, { props: { variant: 'secondary' }, slots: { default: 'Click' } });
+    const wrapper = mount(DsButton, {
+      props: { variant: 'secondary' },
+      slots: { default: 'Click' },
+    });
     expect(wrapper.classes()).toContain('secondary');
   });
 

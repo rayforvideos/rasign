@@ -8,9 +8,7 @@ interface SwitchProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 
 export const Switch = forwardRef<HTMLInputElement, SwitchProps>(
   ({ label, disabled, className, ...rest }, ref) => {
     const id = useId();
-    const cls = [styles.wrapper, disabled && styles.disabled, className]
-      .filter(Boolean)
-      .join(' ');
+    const cls = [styles.wrapper, disabled && styles.disabled, className].filter(Boolean).join(' ');
 
     return (
       <label className={cls} htmlFor={id}>

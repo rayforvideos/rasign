@@ -8,12 +8,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ error, fullWidth, className, ...rest }, ref) => {
-    const cls = [
-      styles.input,
-      error && styles.error,
-      fullWidth && styles.fullWidth,
-      className,
-    ]
+    const cls = [styles.input, error && styles.error, fullWidth && styles.fullWidth, className]
       .filter(Boolean)
       .join(' ');
 

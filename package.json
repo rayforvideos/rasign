@@ -6,13 +6,21 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "storybook": "turbo run storybook",
-    "lint": "turbo run lint",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
     "validate:tokens": "turbo run validate:tokens"
   },
   "devDependencies": {
-    "turbo": "^2"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "prettier": "^3.8.1",
+    "turbo": "^2",
+    "typescript-eslint": "^8.57.2"
   },
   "packageManager": "pnpm@9.15.4"
 }

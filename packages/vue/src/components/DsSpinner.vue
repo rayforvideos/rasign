@@ -4,13 +4,16 @@ import styles from '@rasign/styles/components/spinner.module.scss';
 
 type Size = 'sm' | 'md' | 'lg' | 'xl';
 
-const props = withDefaults(defineProps<{
-  size?: Size;
-  label?: string;
-}>(), {
-  size: 'md',
-  label: 'Loading',
-});
+const props = withDefaults(
+  defineProps<{
+    size?: Size;
+    label?: string;
+  }>(),
+  {
+    size: 'md',
+    label: 'Loading',
+  },
+);
 </script>
 
 <template>

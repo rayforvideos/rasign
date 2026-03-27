@@ -13,10 +13,7 @@ function getConfig(brand, theme) {
   const isDefaultTheme = theme === 'light';
 
   return {
-    include: [
-      'tokens/base/**/*.json',
-      'tokens/semantic/**/*.json',
-    ],
+    include: ['tokens/base/**/*.json', 'tokens/semantic/**/*.json'],
     source: [
       `tokens/brands/${brand}/color.json`,
       `tokens/brands/${brand}/overrides.json`,

@@ -10,28 +10,48 @@ describe('Row', () => {
   });
 
   test('renders with as prop', () => {
-    render(<Row as="nav" data-testid="row">Nav</Row>);
+    render(
+      <Row as="nav" data-testid="row">
+        Nav
+      </Row>,
+    );
     expect(screen.getByTestId('row').tagName).toBe('NAV');
   });
 
   test('applies gap style', () => {
-    render(<Row gap="4" data-testid="row">Content</Row>);
+    render(
+      <Row gap="4" data-testid="row">
+        Content
+      </Row>,
+    );
     const el = screen.getByTestId('row');
     expect(el.style.gap).toBe('var(--ds-spacing-4)');
   });
 
   test('applies align class', () => {
-    render(<Row align="center" data-testid="row">Content</Row>);
+    render(
+      <Row align="center" data-testid="row">
+        Content
+      </Row>,
+    );
     expect(screen.getByTestId('row').className).toContain('alignCenter');
   });
 
   test('applies justify class', () => {
-    render(<Row justify="between" data-testid="row">Content</Row>);
+    render(
+      <Row justify="between" data-testid="row">
+        Content
+      </Row>,
+    );
     expect(screen.getByTestId('row').className).toContain('justifyBetween');
   });
 
   test('applies wrap class', () => {
-    render(<Row wrap data-testid="row">Content</Row>);
+    render(
+      <Row wrap data-testid="row">
+        Content
+      </Row>,
+    );
     expect(screen.getByTestId('row').className).toContain('wrap');
   });
 });

@@ -9,13 +9,7 @@ interface IconProps extends React.HTMLAttributes<HTMLSpanElement> {
   label: string;
 }
 
-export function Icon({
-  svg: SvgComponent,
-  size = 'md',
-  label,
-  className,
-  ...rest
-}: IconProps) {
+export function Icon({ svg: SvgComponent, size = 'md', label, className, ...rest }: IconProps) {
   const cls = [styles.icon, styles[size], className].filter(Boolean).join(' ');
 
   return (

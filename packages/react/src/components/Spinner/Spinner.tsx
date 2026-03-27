@@ -7,12 +7,7 @@ interface SpinnerProps extends React.HTMLAttributes<HTMLDivElement> {
   label?: string;
 }
 
-export function Spinner({
-  size = 'md',
-  label = 'Loading',
-  className,
-  ...rest
-}: SpinnerProps) {
+export function Spinner({ size = 'md', label = 'Loading', className, ...rest }: SpinnerProps) {
   const cls = [styles.spinner, styles[size], className].filter(Boolean).join(' ');
 
   return <div className={cls} role="status" aria-label={label} {...rest} />;

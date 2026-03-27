@@ -24,7 +24,9 @@
     "test": {
       "dependsOn": ["^build:tokens"]
     },
-    "lint": {},
+    "lint": {
+      "dependsOn": ["^build:tokens"]
+    },
     "typecheck": {
       "dependsOn": ["^build:tokens"]
     }

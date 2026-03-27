@@ -2,19 +2,37 @@ import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 
 const colorTokens = [
-  'bg', 'bg-subtle', 'bg-muted',
-  'text', 'text-muted', 'text-subtle',
-  'border', 'border-strong', 'ring',
-  'accent', 'accent-hover', 'accent-text',
-  'danger', 'success', 'warning',
+  'bg',
+  'bg-subtle',
+  'bg-muted',
+  'text',
+  'text-muted',
+  'text-subtle',
+  'border',
+  'border-strong',
+  'ring',
+  'accent',
+  'accent-hover',
+  'accent-text',
+  'danger',
+  'success',
+  'warning',
 ];
 
 function ColorPalette() {
-  return React.createElement('div', {
-    style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '16px' }
-  },
+  return React.createElement(
+    'div',
+    {
+      style: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))',
+        gap: '16px',
+      },
+    },
     ...colorTokens.map((name) =>
-      React.createElement('div', { key: name, style: { display: 'flex', flexDirection: 'column', gap: '4px' } },
+      React.createElement(
+        'div',
+        { key: name, style: { display: 'flex', flexDirection: 'column', gap: '4px' } },
         React.createElement('div', {
           style: {
             width: '100%',

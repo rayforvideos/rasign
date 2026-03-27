@@ -4,10 +4,18 @@ import React from 'react';
 const spacingTokens = ['1', '2', '3', '4', '5', '6', '8', '10', '12', '16'];
 
 function SpacingScale() {
-  return React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: '8px' } },
+  return React.createElement(
+    'div',
+    { style: { display: 'flex', flexDirection: 'column', gap: '8px' } },
     ...spacingTokens.map((s) =>
-      React.createElement('div', { key: s, style: { display: 'flex', alignItems: 'center', gap: '12px' } },
-        React.createElement('code', { style: { width: '120px', fontSize: '12px' } }, `--ds-spacing-${s}`),
+      React.createElement(
+        'div',
+        { key: s, style: { display: 'flex', alignItems: 'center', gap: '12px' } },
+        React.createElement(
+          'code',
+          { style: { width: '120px', fontSize: '12px' } },
+          `--ds-spacing-${s}`,
+        ),
         React.createElement('div', {
           style: {
             height: '24px',

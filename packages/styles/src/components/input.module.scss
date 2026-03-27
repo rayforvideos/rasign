@@ -26,7 +26,11 @@
 
 .error {
   border-color: var(--ds-color-danger);
-  &:focus { border-color: var(--ds-color-danger); }
+  &:focus {
+    border-color: var(--ds-color-danger);
+  }
 }
 
-.fullWidth { width: 100%; }
+.fullWidth {
+  width: 100%;
+}

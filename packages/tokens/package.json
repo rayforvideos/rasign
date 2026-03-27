@@ -7,9 +7,14 @@
     "validate:tokens": "node scripts/validate-tokens.js"
   },
   "exports": {
-    "./*/css/*": "./build/*/css/*",
-    "./*/scss/*": "./build/*/scss/*",
-    "./*/js/*": "./build/*/js/*"
+    "./service-a/css/light.css": "./build/service-a/css/light.css",
+    "./service-a/css/dark.css": "./build/service-a/css/dark.css",
+    "./service-a/scss/*": "./build/service-a/scss/*",
+    "./service-a/js/*": "./build/service-a/js/*",
+    "./service-b/css/light.css": "./build/service-b/css/light.css",
+    "./service-b/css/dark.css": "./build/service-b/css/dark.css",
+    "./service-b/scss/*": "./build/service-b/scss/*",
+    "./service-b/js/*": "./build/service-b/js/*"
   },
   "devDependencies": {
     "style-dictionary": "^4"

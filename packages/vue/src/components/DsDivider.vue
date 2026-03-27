@@ -4,11 +4,14 @@ import styles from '@rasign/styles/components/divider.module.scss';
 
 type Orientation = 'horizontal' | 'vertical';
 
-const props = withDefaults(defineProps<{
-  orientation?: Orientation;
-}>(), {
-  orientation: 'horizontal',
-});
+const props = withDefaults(
+  defineProps<{
+    orientation?: Orientation;
+  }>(),
+  {
+    orientation: 'horizontal',
+  },
+);
 </script>
 
 <template>

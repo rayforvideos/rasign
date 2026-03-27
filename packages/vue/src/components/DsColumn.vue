@@ -20,20 +20,25 @@ const justifyMap: Record<Justify, string> = {
   between: styles.justifyBetween,
 };
 
-const props = withDefaults(defineProps<{
-  as?: string;
-  gap?: string;
-  align?: Align;
-  justify?: Justify;
-}>(), {
-  as: 'div',
-});
+const props = withDefaults(
+  defineProps<{
+    as?: string;
+    gap?: string;
+    align?: Align;
+    justify?: Justify;
+  }>(),
+  {
+    as: 'div',
+  },
+);
 
-const classes = computed(() => [
-  styles.column,
-  props.align && alignMap[props.align],
-  props.justify && justifyMap[props.justify],
-].filter(Boolean));
+const classes = computed(() =>
+  [
+    styles.column,
+    props.align && alignMap[props.align],
+    props.justify && justifyMap[props.justify],
+  ].filter(Boolean),
+);
 
 const gapStyle = computed<CSSProperties>(() =>
   props.gap ? { gap: `var(--ds-spacing-${props.gap})` } : {},

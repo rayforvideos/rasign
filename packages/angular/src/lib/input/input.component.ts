@@ -14,9 +14,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
     />
   `,
   styles: [],
-  providers: [
-    { provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => DsInput), multi: true },
-  ],
+  providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => DsInput), multi: true }],
 })
 export class DsInput implements ControlValueAccessor {
   error = input<boolean>(false);
@@ -35,10 +33,18 @@ export class DsInput implements ControlValueAccessor {
     return parts.join(' ');
   };
 
-  writeValue(value: string): void { this.value.set(value ?? ''); }
-  registerOnChange(fn: (value: string) => void): void { this.onChange = fn; }
-  registerOnTouched(fn: () => void): void { this.onTouched = fn; }
-  setDisabledState(disabled: boolean): void { this.isDisabled.set(disabled); }
+  writeValue(value: string): void {
+    this.value.set(value ?? '');
+  }
+  registerOnChange(fn: (value: string) => void): void {
+    this.onChange = fn;
+  }
+  registerOnTouched(fn: () => void): void {
+    this.onTouched = fn;
+  }
+  setDisabledState(disabled: boolean): void {
+    this.isDisabled.set(disabled);
+  }
 
   onInput(event: Event): void {
     const val = (event.target as HTMLInputElement).value;

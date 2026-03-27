@@ -4,7 +4,9 @@ import { Badge } from '@rasign/react';
 const meta: Meta<typeof Badge> = {
   title: 'Components/Badge',
   component: Badge,
-  argTypes: { variant: { control: 'select', options: ['default', 'success', 'danger', 'warning'] } },
+  argTypes: {
+    variant: { control: 'select', options: ['default', 'success', 'danger', 'warning'] },
+  },
 };
 export default meta;
 

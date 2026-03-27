@@ -9,23 +9,12 @@ interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: Size;
 }
 
-export function Avatar({
-  src,
-  alt,
-  initials,
-  size = 'md',
-  className,
-  ...rest
-}: AvatarProps) {
+export function Avatar({ src, alt, initials, size = 'md', className, ...rest }: AvatarProps) {
   const cls = [styles.avatar, styles[size], className].filter(Boolean).join(' ');
 
   return (
     <div className={cls} {...rest}>
-      {src ? (
-        <img className={styles.image} src={src} alt={alt ?? ''} />
-      ) : (
-        <span>{initials}</span>
-      )}
+      {src ? <img className={styles.image} src={src} alt={alt ?? ''} /> : <span>{initials}</span>}
     </div>
   );
 }

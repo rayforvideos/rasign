@@ -8,9 +8,15 @@ let nextId = 0;
   standalone: true,
   template: `
     <label [class]="wrapperClasses()" [for]="id">
-      <input [id]="id" type="checkbox" class="checkbox"
-        [checked]="checked()" [disabled]="isDisabled()"
-        (change)="onChange_($event)" (blur)="onTouched()" />
+      <input
+        [id]="id"
+        type="checkbox"
+        class="checkbox"
+        [checked]="checked()"
+        [disabled]="isDisabled()"
+        (change)="onChange_($event)"
+        (blur)="onTouched()"
+      />
       <span class="label">{{ label() }}</span>
     </label>
   `,
@@ -29,12 +35,20 @@ export class DsCheckbox implements ControlValueAccessor {
   private onChange: (value: boolean) => void = () => {};
   onTouched: () => void = () => {};
 
-  wrapperClasses = () => this.isDisabled() ? 'wrapper disabled' : 'wrapper';
+  wrapperClasses = () => (this.isDisabled() ? 'wrapper disabled' : 'wrapper');
 
-  writeValue(value: boolean): void { this.checked.set(!!value); }
-  registerOnChange(fn: (value: boolean) => void): void { this.onChange = fn; }
-  registerOnTouched(fn: () => void): void { this.onTouched = fn; }
-  setDisabledState(disabled: boolean): void { this.isDisabled.set(disabled); }
+  writeValue(value: boolean): void {
+    this.checked.set(!!value);
+  }
+  registerOnChange(fn: (value: boolean) => void): void {
+    this.onChange = fn;
+  }
+  registerOnTouched(fn: () => void): void {
+    this.onTouched = fn;
+  }
+  setDisabledState(disabled: boolean): void {
+    this.isDisabled.set(disabled);
+  }
 
   onChange_(event: Event): void {
     const val = (event.target as HTMLInputElement).checked;

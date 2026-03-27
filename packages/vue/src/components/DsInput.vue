@@ -2,11 +2,14 @@
 <script setup lang="ts">
 import styles from '@rasign/styles/components/input.module.scss';
 
-const props = withDefaults(defineProps<{
-  error?: boolean;
-  fullWidth?: boolean;
-  disabled?: boolean;
-}>(), {});
+const props = withDefaults(
+  defineProps<{
+    error?: boolean;
+    fullWidth?: boolean;
+    disabled?: boolean;
+  }>(),
+  {},
+);
 
 const model = defineModel<string>({ default: '' });
 </script>

@@ -6,12 +6,7 @@ interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   variant?: Variant;
 }
 
-export function Badge({
-  variant = 'default',
-  className,
-  children,
-  ...rest
-}: BadgeProps) {
+export function Badge({ variant = 'default', className, children, ...rest }: BadgeProps) {
   const cls = [styles.badge, styles[variant], className].filter(Boolean).join(' ');
 
   return (

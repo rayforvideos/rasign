@@ -14,9 +14,15 @@ const variants = [
 ] as const;
 
 function TypographyScale() {
-  return React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: '16px' } },
+  return React.createElement(
+    'div',
+    { style: { display: 'flex', flexDirection: 'column', gap: '16px' } },
     ...variants.map(({ variant, label }) =>
-      React.createElement(Typography, { key: variant, variant }, `${label} — 다람쥐 헌 쳇바퀴에 타고파 The quick brown fox`),
+      React.createElement(
+        Typography,
+        { key: variant, variant },
+        `${label} — 다람쥐 헌 쳇바퀴에 타고파 The quick brown fox`,
+      ),
     ),
   );
 }

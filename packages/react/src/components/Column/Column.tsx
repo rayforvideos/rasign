@@ -38,12 +38,7 @@ export function Column<E extends ElementType = 'div'>({
   ...rest
 }: PolymorphicProps<E, ColumnOwnProps>) {
   const Component = as ?? 'div';
-  const cls = [
-    styles.column,
-    align && alignMap[align],
-    justify && justifyMap[justify],
-    className,
-  ]
+  const cls = [styles.column, align && alignMap[align], justify && justifyMap[justify], className]
     .filter(Boolean)
     .join(' ');
 

@@ -4,11 +4,17 @@ type Align = 'start' | 'center' | 'end' | 'stretch';
 type Justify = 'start' | 'center' | 'end' | 'between';
 
 const alignMap: Record<Align, string> = {
-  start: 'alignStart', center: 'alignCenter', end: 'alignEnd', stretch: 'alignStretch',
+  start: 'alignStart',
+  center: 'alignCenter',
+  end: 'alignEnd',
+  stretch: 'alignStretch',
 };
 
 const justifyMap: Record<Justify, string> = {
-  start: 'justifyStart', center: 'justifyCenter', end: 'justifyEnd', between: 'justifyBetween',
+  start: 'justifyStart',
+  center: 'justifyCenter',
+  end: 'justifyEnd',
+  between: 'justifyBetween',
 };
 
 @Component({
@@ -16,9 +22,15 @@ const justifyMap: Record<Justify, string> = {
   standalone: true,
   template: `
     @switch (tag()) {
-      @case ('aside') { <aside [class]="classes()" [style.gap]="gapStyle()"><ng-content /></aside> }
-      @case ('section') { <section [class]="classes()" [style.gap]="gapStyle()"><ng-content /></section> }
-      @default { <div [class]="classes()" [style.gap]="gapStyle()"><ng-content /></div> }
+      @case ('aside') {
+        <aside [class]="classes()" [style.gap]="gapStyle()"><ng-content /></aside>
+      }
+      @case ('section') {
+        <section [class]="classes()" [style.gap]="gapStyle()"><ng-content /></section>
+      }
+      @default {
+        <div [class]="classes()" [style.gap]="gapStyle()"><ng-content /></div>
+      }
     }
   `,
   styles: [],
