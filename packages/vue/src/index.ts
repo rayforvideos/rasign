@@ -5,3 +5,7 @@ export { default as DsTypography } from './components/DsTypography.vue';
 export { default as DsRow } from './components/DsRow.vue';
 export { default as DsColumn } from './components/DsColumn.vue';
 export { default as DsSurface } from './components/DsSurface.vue';
+export { default as DsButton } from './components/DsButton.vue';
+export { default as DsAvatar } from './components/DsAvatar.vue';
+export { default as DsBadge } from './components/DsBadge.vue';
+export { default as DsIcon } from './components/DsIcon.vue';
