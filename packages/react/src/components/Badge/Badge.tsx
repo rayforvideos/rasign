@@ -1,4 +1,4 @@
-import styles from './Badge.module.scss';
+import styles from '@rasign/styles/components/badge.module.scss';
 
 type Variant = 'default' | 'success' | 'danger' | 'warning';
 

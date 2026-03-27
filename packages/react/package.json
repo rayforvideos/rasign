@@ -10,10 +10,11 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    },
-    "./styles.css": "./dist/styles.css"
+    }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch",
@@ -26,7 +27,9 @@
     "react-dom": "^18 || ^19"
   },
   "devDependencies": {
+    "@rasign/styles": "workspace:*",
     "@rasign/tokens": "workspace:*",
+    "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6",
     "@testing-library/react": "^16",
     "@types/react": "^18",

@@ -1,6 +1,6 @@
 import type { ElementType, CSSProperties } from 'react';
 import type { PolymorphicProps } from '../../types/polymorphic';
-import styles from './Surface.module.scss';
+import styles from '@rasign/styles/components/surface.module.scss';
 
 type Elevation = 'sm' | 'md' | 'lg' | 'xl';
 type Rounded = 'sm' | 'md' | 'lg' | 'xl' | 'full';

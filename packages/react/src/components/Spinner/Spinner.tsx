@@ -1,4 +1,4 @@
-import styles from './Spinner.module.scss';
+import styles from '@rasign/styles/components/spinner.module.scss';
 
 type Size = 'sm' | 'md' | 'lg' | 'xl';
 

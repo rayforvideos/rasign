@@ -1,4 +1,4 @@
-import styles from './Button.module.scss';
+import styles from '@rasign/styles/components/button.module.scss';
 
 type Variant = 'primary' | 'secondary' | 'ghost';
 type Size = 'sm' | 'md' | 'lg';

@@ -1,4 +1,4 @@
-import styles from './Divider.module.scss';
+import styles from '@rasign/styles/components/divider.module.scss';
 
 type Orientation = 'horizontal' | 'vertical';
 

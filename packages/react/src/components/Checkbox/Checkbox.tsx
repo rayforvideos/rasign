@@ -1,5 +1,5 @@
 import { useId, forwardRef } from 'react';
-import styles from './Checkbox.module.scss';
+import styles from '@rasign/styles/components/checkbox.module.scss';
 
 interface CheckboxProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
   label: string;

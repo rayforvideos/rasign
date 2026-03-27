@@ -1,5 +1,5 @@
 import { useId, forwardRef } from 'react';
-import styles from './Switch.module.scss';
+import styles from '@rasign/styles/components/switch.module.scss';
 
 interface SwitchProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
   label: string;

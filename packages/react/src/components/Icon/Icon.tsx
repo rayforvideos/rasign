@@ -1,5 +1,5 @@
 import type { ComponentType, SVGProps } from 'react';
-import styles from './Icon.module.scss';
+import styles from '@rasign/styles/components/icon.module.scss';
 
 type Size = 'sm' | 'md' | 'lg' | 'xl';
 

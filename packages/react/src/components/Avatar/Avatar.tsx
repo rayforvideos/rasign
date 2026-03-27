@@ -1,4 +1,4 @@
-import styles from './Avatar.module.scss';
+import styles from '@rasign/styles/components/avatar.module.scss';
 
 type Size = 'sm' | 'md' | 'lg' | 'xl';
 
