@@ -1,0 +1,32 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build:tokens": {
+      "inputs": ["tokens/**/*.json", "sd.config.js"],
+      "outputs": ["build/**"]
+    },
+    "validate:tokens": {
+      "dependsOn": ["build:tokens"],
+      "inputs": ["build/**"]
+    },
+    "build": {
+      "dependsOn": ["^build:tokens"],
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "dependsOn": ["^build:tokens"],
+      "persistent": true
+    },
+    "storybook": {
+      "dependsOn": ["^build:tokens", "^build"],
+      "persistent": true
+    },
+    "test": {
+      "dependsOn": ["^build:tokens"]
+    },
+    "lint": {},
+    "typecheck": {
+      "dependsOn": ["^build:tokens"]
+    }
+  }
+}
