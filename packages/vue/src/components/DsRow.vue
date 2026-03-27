@@ -1,7 +1,7 @@
 <!-- src/components/DsRow.vue -->
 <script setup lang="ts">
 import { computed, type CSSProperties } from 'vue';
-import styles from '@rasign/styles/components/row.module.scss';
+import styles from '@rayforvideos/styles/components/row.module.scss';
 
 type Align = 'start' | 'center' | 'end' | 'stretch' | 'baseline';
 type Justify = 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly';

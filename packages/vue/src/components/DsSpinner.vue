@@ -1,6 +1,6 @@
 <!-- src/components/DsSpinner.vue -->
 <script setup lang="ts">
-import styles from '@rasign/styles/components/spinner.module.scss';
+import styles from '@rayforvideos/styles/components/spinner.module.scss';
 
 type Size = 'sm' | 'md' | 'lg' | 'xl';
 

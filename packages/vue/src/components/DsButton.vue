@@ -1,6 +1,6 @@
 <!-- src/components/DsButton.vue -->
 <script setup lang="ts">
-import styles from '@rasign/styles/components/button.module.scss';
+import styles from '@rayforvideos/styles/components/button.module.scss';
 
 type Variant = 'primary' | 'secondary' | 'ghost';
 type Size = 'sm' | 'md' | 'lg';

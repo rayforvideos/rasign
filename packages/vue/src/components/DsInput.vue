@@ -1,6 +1,6 @@
 <!-- src/components/DsInput.vue -->
 <script setup lang="ts">
-import styles from '@rasign/styles/components/input.module.scss';
+import styles from '@rayforvideos/styles/components/input.module.scss';
 
 const props = withDefaults(
   defineProps<{

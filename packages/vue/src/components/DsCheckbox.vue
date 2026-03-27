@@ -1,7 +1,7 @@
 <!-- src/components/DsCheckbox.vue -->
 <script setup lang="ts">
 import { useId } from 'vue';
-import styles from '@rasign/styles/components/checkbox.module.scss';
+import styles from '@rayforvideos/styles/components/checkbox.module.scss';
 
 const props = defineProps<{
   label: string;

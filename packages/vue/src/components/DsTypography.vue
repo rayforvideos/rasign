@@ -1,6 +1,6 @@
 <!-- src/components/DsTypography.vue -->
 <script setup lang="ts">
-import styles from '@rasign/styles/components/typography.module.scss';
+import styles from '@rayforvideos/styles/components/typography.module.scss';
 
 type Variant =
   | 'heading-xl'

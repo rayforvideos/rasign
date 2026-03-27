@@ -1,7 +1,7 @@
 <!-- src/components/DsSurface.vue -->
 <script setup lang="ts">
 import { computed, type CSSProperties } from 'vue';
-import styles from '@rasign/styles/components/surface.module.scss';
+import styles from '@rayforvideos/styles/components/surface.module.scss';
 
 type Elevation = 'sm' | 'md' | 'lg' | 'xl';
 type Rounded = 'sm' | 'md' | 'lg' | 'xl' | 'full';

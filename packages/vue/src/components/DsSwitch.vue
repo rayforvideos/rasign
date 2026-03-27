@@ -1,7 +1,7 @@
 <!-- src/components/DsSwitch.vue -->
 <script setup lang="ts">
 import { useId } from 'vue';
-import styles from '@rasign/styles/components/switch.module.scss';
+import styles from '@rayforvideos/styles/components/switch.module.scss';
 
 const props = defineProps<{
   label: string;

@@ -1,6 +1,6 @@
 <!-- src/components/DsDivider.vue -->
 <script setup lang="ts">
-import styles from '@rasign/styles/components/divider.module.scss';
+import styles from '@rayforvideos/styles/components/divider.module.scss';
 
 type Orientation = 'horizontal' | 'vertical';
 
