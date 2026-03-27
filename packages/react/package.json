@@ -1,5 +1,5 @@
 {
-  "name": "@rasign/react",
+  "name": "@rayforvideos/react",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -22,13 +22,20 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rayforvideos/rasign.git"
+  },
   "peerDependencies": {
     "react": "^18 || ^19",
     "react-dom": "^18 || ^19"
   },
   "devDependencies": {
-    "@rasign/styles": "workspace:*",
-    "@rasign/tokens": "workspace:*",
+    "@rayforvideos/styles": "workspace:*",
+    "@rayforvideos/tokens": "workspace:*",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6",
     "@testing-library/react": "^16",

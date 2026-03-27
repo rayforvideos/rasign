@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Spinner, Divider, Row, Column } from '@rasign/react';
+import { Spinner, Divider, Row, Column } from '@rayforvideos/react';
 import React from 'react';
 
 const meta: Meta = { title: 'Components/Feedback' };

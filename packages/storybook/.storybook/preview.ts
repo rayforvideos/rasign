@@ -1,9 +1,9 @@
 import type { Preview } from '@storybook/react';
-import { DesignSystemProvider } from '@rasign/react';
-import '@rasign/tokens/service-a/css/light.css';
-import '@rasign/tokens/service-a/css/dark.css';
-import '@rasign/tokens/service-b/css/light.css';
-import '@rasign/tokens/service-b/css/dark.css';
+import { DesignSystemProvider } from '@rayforvideos/react';
+import '@rayforvideos/tokens/service-a/css/light.css';
+import '@rayforvideos/tokens/service-a/css/dark.css';
+import '@rayforvideos/tokens/service-b/css/light.css';
+import '@rayforvideos/tokens/service-b/css/dark.css';
 import React from 'react';
 
 const preview: Preview = {

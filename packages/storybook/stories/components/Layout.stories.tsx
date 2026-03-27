@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Row, Column, Surface } from '@rasign/react';
+import { Row, Column, Surface } from '@rayforvideos/react';
 import React from 'react';
 
 function Box({ children }: { children: string }) {

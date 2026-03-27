@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Surface, Row, Column, Avatar, Typography, Button, Badge } from '@rasign/react';
+import { Surface, Row, Column, Avatar, Typography, Button, Badge } from '@rayforvideos/react';
 import React from 'react';
 
 function UserCard() {

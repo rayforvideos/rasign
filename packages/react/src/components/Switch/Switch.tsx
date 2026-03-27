@@ -1,5 +1,5 @@
 import { useId, forwardRef } from 'react';
-import styles from '@rasign/styles/components/switch.module.scss';
+import styles from '@rayforvideos/styles/components/switch.module.scss';
 
 interface SwitchProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
   label: string;

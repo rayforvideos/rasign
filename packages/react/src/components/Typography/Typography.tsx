@@ -1,6 +1,6 @@
 import type { ElementType } from 'react';
 import type { PolymorphicProps } from '../../types/polymorphic';
-import styles from '@rasign/styles/components/typography.module.scss';
+import styles from '@rayforvideos/styles/components/typography.module.scss';
 
 type Variant =
   | 'heading-xl'

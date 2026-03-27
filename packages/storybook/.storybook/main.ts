@@ -15,7 +15,7 @@ const config: StorybookConfig = {
     config.resolve = config.resolve || {};
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@rasign/react': resolve(__dirname, '../../react/src/index.ts'),
+      '@rayforvideos/react': resolve(__dirname, '../../react/src/index.ts'),
     };
     return config;
   },

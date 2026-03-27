@@ -1,6 +1,6 @@
 import type { ElementType, CSSProperties } from 'react';
 import type { PolymorphicProps } from '../../types/polymorphic';
-import styles from '@rasign/styles/components/row.module.scss';
+import styles from '@rayforvideos/styles/components/row.module.scss';
 
 type Align = 'start' | 'center' | 'end' | 'stretch' | 'baseline';
 type Justify = 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly';

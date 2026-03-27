@@ -1,5 +1,5 @@
 {
-  "name": "@rasign/tokens",
+  "name": "@rayforvideos/tokens",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -15,6 +15,13 @@
     "./service-b/css/dark.css": "./build/service-b/css/dark.css",
     "./service-b/scss/*": "./build/service-b/scss/*",
     "./service-b/js/*": "./build/service-b/js/*"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rayforvideos/rasign.git"
   },
   "devDependencies": {
     "style-dictionary": "^4"

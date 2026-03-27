@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import styles from '@rasign/styles/components/input.module.scss';
+import styles from '@rayforvideos/styles/components/input.module.scss';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: boolean;

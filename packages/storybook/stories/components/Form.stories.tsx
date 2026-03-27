@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Input, Checkbox, Switch, Column } from '@rasign/react';
+import { Input, Checkbox, Switch, Column } from '@rayforvideos/react';
 import React from 'react';
 
 const meta: Meta = { title: 'Components/Form' };

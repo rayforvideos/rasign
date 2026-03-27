@@ -10,8 +10,8 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@rasign/react": ["../react/src/index.ts"],
-      "@rasign/styles/*": ["../styles/*"]
+      "@rayforvideos/react": ["../react/src/index.ts"],
+      "@rayforvideos/styles/*": ["../styles/*"]
     }
   },
   "include": [

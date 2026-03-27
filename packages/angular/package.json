@@ -1,11 +1,18 @@
 {
-  "name": "@rasign/angular",
+  "name": "@rayforvideos/angular",
   "version": "0.1.0",
   "sideEffects": false,
   "scripts": {
     "build": "ng-packagr -p ng-package.json",
     "test": "vitest run",
     "test:watch": "vitest"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rayforvideos/rasign.git"
   },
   "peerDependencies": {
     "@angular/core": ">=17.0.0",
@@ -16,8 +23,8 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@rasign/styles": "workspace:*",
-    "@rasign/tokens": "workspace:*",
+    "@rayforvideos/styles": "workspace:*",
+    "@rayforvideos/tokens": "workspace:*",
     "@angular/core": "^19",
     "@angular/common": "^19",
     "@angular/forms": "^19",

@@ -1,13 +1,13 @@
 {
-  "name": "@rasign/storybook",
+  "name": "@rayforvideos/storybook",
   "private": true,
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@rasign/react": "workspace:*",
-    "@rasign/tokens": "workspace:*",
+    "@rayforvideos/react": "workspace:*",
+    "@rayforvideos/tokens": "workspace:*",
     "@storybook/addon-essentials": "^8",
     "@storybook/react": "^8",
     "@storybook/react-vite": "^8",

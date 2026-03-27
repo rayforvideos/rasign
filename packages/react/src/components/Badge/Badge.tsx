@@ -1,4 +1,4 @@
-import styles from '@rasign/styles/components/badge.module.scss';
+import styles from '@rayforvideos/styles/components/badge.module.scss';
 
 type Variant = 'default' | 'success' | 'danger' | 'warning';
 

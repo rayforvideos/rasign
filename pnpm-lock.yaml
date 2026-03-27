@@ -66,10 +66,10 @@ importers:
       '@angular/platform-browser-dynamic':
         specifier: ^19
         version: 19.2.20(@angular/common@19.2.20(@angular/core@19.2.20(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/compiler@19.2.20)(@angular/core@19.2.20(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@19.2.20(@angular/common@19.2.20(@angular/core@19.2.20(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.20(rxjs@7.8.2)(zone.js@0.15.1)))
-      '@rasign/styles':
+      '@rayforvideos/styles':
         specifier: workspace:*
         version: link:../styles
-      '@rasign/tokens':
+      '@rayforvideos/tokens':
         specifier: workspace:*
         version: link:../tokens
       ng-packagr:
@@ -93,10 +93,10 @@ importers:
 
   packages/react:
     devDependencies:
-      '@rasign/styles':
+      '@rayforvideos/styles':
         specifier: workspace:*
         version: link:../styles
-      '@rasign/tokens':
+      '@rayforvideos/tokens':
         specifier: workspace:*
         version: link:../tokens
       '@testing-library/dom':
@@ -144,10 +144,10 @@ importers:
 
   packages/storybook:
     devDependencies:
-      '@rasign/react':
+      '@rayforvideos/react':
         specifier: workspace:*
         version: link:../react
-      '@rasign/tokens':
+      '@rayforvideos/tokens':
         specifier: workspace:*
         version: link:../tokens
       '@storybook/addon-essentials':
@@ -194,10 +194,10 @@ importers:
 
   packages/vue:
     devDependencies:
-      '@rasign/styles':
+      '@rayforvideos/styles':
         specifier: workspace:*
         version: link:../styles
-      '@rasign/tokens':
+      '@rayforvideos/tokens':
         specifier: workspace:*
         version: link:../tokens
       '@types/node':
