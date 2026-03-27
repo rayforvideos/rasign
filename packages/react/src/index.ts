@@ -4,3 +4,4 @@ export { Typography } from './components/Typography';
 export { Row } from './components/Row';
 export { Column } from './components/Column';
 export { Surface } from './components/Surface';
+export { Button } from './components/Button';
