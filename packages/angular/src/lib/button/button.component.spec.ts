@@ -12,7 +12,7 @@ class DefaultHost {}
 @Component({
   standalone: true,
   imports: [DsButton],
-  template: `<ds-button variant="secondary">Click</ds-button>`,
+  template: `<ds-button [variant]="'secondary'">Click</ds-button>`,
 })
 class SecondaryHost {}
 

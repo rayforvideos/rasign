@@ -1,4 +1,4 @@
-import { Component, forwardRef, input, signal } from '@angular/core';
+import { Component, forwardRef, input, signal, Input } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 let nextId = 0;
@@ -26,7 +26,7 @@ let nextId = 0;
   providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => DsSwitch), multi: true }],
 })
 export class DsSwitch implements ControlValueAccessor {
-  label = input.required<string>();
+  @Input({ isSignal: true, required: true } as any) label = input.required<string>();
 
   checked = signal(false);
   isDisabled = signal(false);

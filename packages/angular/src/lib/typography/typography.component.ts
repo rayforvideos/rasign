@@ -1,4 +1,4 @@
-import { Component, input, computed } from '@angular/core';
+import { Component, input, computed, Input } from '@angular/core';
 
 type Variant =
   | 'heading-xl'
@@ -63,8 +63,8 @@ const variantClassMap: Record<Variant, string> = {
 })
 export class DsTypography {
   /** HTML tag to render (renamed from 'as' to avoid reserved keyword conflict) */
-  tag = input<string>('p');
-  variant = input<Variant>('body');
+  @Input({ isSignal: true }) tag = input<string>('p');
+  @Input({ isSignal: true }) variant = input<Variant>('body');
 
   classes = computed(() => `typography ${variantClassMap[this.variant()]}`);
 }

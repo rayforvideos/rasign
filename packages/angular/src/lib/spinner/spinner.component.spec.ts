@@ -12,7 +12,7 @@ class DefaultHost {}
 @Component({
   standalone: true,
   imports: [DsSpinner],
-  template: `<ds-spinner label="Loading data" />`,
+  template: `<ds-spinner [label]="'Loading data'" />`,
 })
 class LabelHost {}
 

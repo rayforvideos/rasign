@@ -12,21 +12,21 @@ class DefaultHost {}
 @Component({
   standalone: true,
   imports: [DsRow],
-  template: `<ds-row tag="nav">content</ds-row>`,
+  template: `<ds-row [tag]="'nav'">content</ds-row>`,
 })
 class NavHost {}
 
 @Component({
   standalone: true,
   imports: [DsRow],
-  template: `<ds-row gap="4">content</ds-row>`,
+  template: `<ds-row [gap]="'4'">content</ds-row>`,
 })
 class GapHost {}
 
 @Component({
   standalone: true,
   imports: [DsRow],
-  template: `<ds-row align="center">content</ds-row>`,
+  template: `<ds-row [align]="'center'">content</ds-row>`,
 })
 class AlignHost {}
 

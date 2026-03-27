@@ -1,4 +1,4 @@
-import { Component, input, computed } from '@angular/core';
+import { Component, input, computed, Input } from '@angular/core';
 
 type Align = 'start' | 'center' | 'end' | 'stretch' | 'baseline';
 type Justify = 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly';
@@ -52,11 +52,11 @@ const justifyMap: Record<Justify, string> = {
 })
 export class DsRow {
   /** HTML tag to render (renamed from 'as' to avoid reserved keyword conflict) */
-  tag = input<string>('div');
-  gap = input<string | undefined>(undefined);
-  align = input<Align | undefined>(undefined);
-  justify = input<Justify | undefined>(undefined);
-  wrap = input<boolean>(false);
+  @Input({ isSignal: true }) tag = input<string>('div');
+  @Input({ isSignal: true }) gap = input<string | undefined>(undefined);
+  @Input({ isSignal: true }) align = input<Align | undefined>(undefined);
+  @Input({ isSignal: true }) justify = input<Justify | undefined>(undefined);
+  @Input({ isSignal: true }) wrap = input<boolean>(false);
 
   classes = computed(() => {
     const parts = ['row'];

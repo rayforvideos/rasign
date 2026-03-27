@@ -5,14 +5,14 @@ import { DsSwitch } from './switch.component';
 @Component({
   standalone: true,
   imports: [DsSwitch],
-  template: `<ds-switch label="Toggle" />`,
+  template: `<ds-switch [label]="'Toggle'" />`,
 })
 class SwitchHost {}
 
 @Component({
   standalone: true,
   imports: [DsSwitch],
-  template: `<ds-switch label="Dark mode" />`,
+  template: `<ds-switch [label]="'Dark mode'" />`,
 })
 class DarkModeHost {}
 

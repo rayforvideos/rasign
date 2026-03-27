@@ -5,21 +5,21 @@ import { DsTypography } from './typography.component';
 @Component({
   standalone: true,
   imports: [DsTypography],
-  template: `<ds-typography tag="p">Text</ds-typography>`,
+  template: `<ds-typography [tag]="'p'">Text</ds-typography>`,
 })
 class DefaultHost {}
 
 @Component({
   standalone: true,
   imports: [DsTypography],
-  template: `<ds-typography tag="h1" variant="heading-xl">Heading</ds-typography>`,
+  template: `<ds-typography [tag]="'h1'" [variant]="'heading-xl'">Heading</ds-typography>`,
 })
 class H1Host {}
 
 @Component({
   standalone: true,
   imports: [DsTypography],
-  template: `<ds-typography variant="heading-lg">Text</ds-typography>`,
+  template: `<ds-typography [variant]="'heading-lg'">Text</ds-typography>`,
 })
 class VariantHost {}
 

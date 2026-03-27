@@ -1,4 +1,4 @@
-import { Component, input, computed } from '@angular/core';
+import { Component, input, computed, Input } from '@angular/core';
 
 type Variant = 'primary' | 'secondary' | 'ghost';
 type Size = 'sm' | 'md' | 'lg';
@@ -15,10 +15,10 @@ type Size = 'sm' | 'md' | 'lg';
   host: { style: 'display: inline-block' },
 })
 export class DsButton {
-  variant = input<Variant>('primary');
-  size = input<Size>('md');
-  fullWidth = input<boolean>(false);
-  disabled = input<boolean>(false);
+  @Input({ isSignal: true }) variant = input<Variant>('primary');
+  @Input({ isSignal: true }) size = input<Size>('md');
+  @Input({ isSignal: true }) fullWidth = input<boolean>(false);
+  @Input({ isSignal: true }) disabled = input<boolean>(false);
 
   classes = computed(() => {
     const parts = ['button', this.variant(), this.size()];
