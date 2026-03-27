@@ -12,3 +12,5 @@ export { default as DsIcon } from './components/DsIcon.vue';
 export { default as DsInput } from './components/DsInput.vue';
 export { default as DsCheckbox } from './components/DsCheckbox.vue';
 export { default as DsSwitch } from './components/DsSwitch.vue';
+export { default as DsSpinner } from './components/DsSpinner.vue';
+export { default as DsDivider } from './components/DsDivider.vue';
