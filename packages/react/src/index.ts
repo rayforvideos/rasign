@@ -1,4 +1,3 @@
-// Populated as components are added
 export { DesignSystemProvider, useDesignSystem } from './providers/DesignSystemProvider';
 export { Typography } from './components/Typography';
 export { Row } from './components/Row';
@@ -11,3 +10,5 @@ export { Icon } from './components/Icon';
 export { Input } from './components/Input';
 export { Checkbox } from './components/Checkbox';
 export { Switch } from './components/Switch';
+export { Spinner } from './components/Spinner';
+export { Divider } from './components/Divider';

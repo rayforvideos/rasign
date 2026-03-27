@@ -1,0 +1,14 @@
+.divider {
+  border: none;
+  background-color: var(--ds-color-border);
+}
+
+.horizontal {
+  width: 100%;
+  height: var(--ds-border-width-thin);
+}
+
+.vertical {
+  width: var(--ds-border-width-thin);
+  align-self: stretch;
+}
