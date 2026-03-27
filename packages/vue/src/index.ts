@@ -9,3 +9,6 @@ export { default as DsButton } from './components/DsButton.vue';
 export { default as DsAvatar } from './components/DsAvatar.vue';
 export { default as DsBadge } from './components/DsBadge.vue';
 export { default as DsIcon } from './components/DsIcon.vue';
+export { default as DsInput } from './components/DsInput.vue';
+export { default as DsCheckbox } from './components/DsCheckbox.vue';
+export { default as DsSwitch } from './components/DsSwitch.vue';
