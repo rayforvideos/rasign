@@ -8,3 +8,6 @@ export { Button } from './components/Button';
 export { Avatar } from './components/Avatar';
 export { Badge } from './components/Badge';
 export { Icon } from './components/Icon';
+export { Input } from './components/Input';
+export { Checkbox } from './components/Checkbox';
+export { Switch } from './components/Switch';
