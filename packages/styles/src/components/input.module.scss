@@ -1,0 +1,32 @@
+.input {
+  padding: var(--ds-space-input-padding-y) var(--ds-space-input-padding-x);
+  font-family: var(--ds-font-family-sans);
+  font-size: var(--ds-font-size-base);
+  line-height: var(--ds-line-height-normal);
+  color: var(--ds-color-text);
+  background-color: var(--ds-color-bg);
+  border: var(--ds-border-width-thin) solid var(--ds-color-border);
+  border-radius: var(--ds-border-radius-md);
+  outline: none;
+  transition: border-color var(--ds-duration-normal) var(--ds-easing-default);
+
+  &::placeholder {
+    color: var(--ds-color-text-subtle);
+  }
+
+  &:focus {
+    border-color: var(--ds-color-ring);
+  }
+
+  &:disabled {
+    opacity: var(--ds-opacity-disabled);
+    cursor: not-allowed;
+  }
+}
+
+.error {
+  border-color: var(--ds-color-danger);
+  &:focus { border-color: var(--ds-color-danger); }
+}
+
+.fullWidth { width: 100%; }

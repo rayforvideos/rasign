@@ -1,0 +1,19 @@
+.surface {
+  background-color: var(--ds-color-bg);
+  color: var(--ds-color-text);
+}
+
+.bordered {
+  border: var(--ds-border-width-thin) solid var(--ds-color-border);
+}
+
+.elevationSm { box-shadow: var(--ds-shadow-sm); }
+.elevationMd { box-shadow: var(--ds-shadow-md); }
+.elevationLg { box-shadow: var(--ds-shadow-lg); }
+.elevationXl { box-shadow: var(--ds-shadow-xl); }
+
+.roundedSm { border-radius: var(--ds-border-radius-sm); }
+.roundedMd { border-radius: var(--ds-border-radius-md); }
+.roundedLg { border-radius: var(--ds-border-radius-lg); }
+.roundedXl { border-radius: var(--ds-border-radius-xl); }
+.roundedFull { border-radius: var(--ds-border-radius-full); }
