@@ -27,6 +27,7 @@
   "devDependencies": {
     "@rasign/styles": "workspace:*",
     "@rasign/tokens": "workspace:*",
+    "@types/node": "^22",
     "@vitejs/plugin-vue": "^5",
     "@vue/test-utils": "^2",
     "happy-dom": "^17",
