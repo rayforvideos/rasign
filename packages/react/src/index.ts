@@ -5,3 +5,6 @@ export { Row } from './components/Row';
 export { Column } from './components/Column';
 export { Surface } from './components/Surface';
 export { Button } from './components/Button';
+export { Avatar } from './components/Avatar';
+export { Badge } from './components/Badge';
+export { Icon } from './components/Icon';
